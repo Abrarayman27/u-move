@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(to right, #587180, #a2bcc1);
+}
+
+input {
+	border-radius: 0.5rem;
+	outline: none;
+	border: none;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.75);
+}
+
+input,
+button {
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	height: 85%;
+	position: relative;
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0 0 3rem 3rem;
+}
+.container .inputs {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.container .inputs .row {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+.container .inputs .row button,
+.container .inputs .row .item {
+	background-color: white;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+.container button:last-child {
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border: none;
+	color: white;
+	width: 50%;
+	margin: auto;
+	background: #023047;
+} /*# sourceMappingURL=landing.css.map */
+
+	</style>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script
+			src="https://kit.fontawesome.com/76a4b7876b.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="landing.css"
+		/>
+		<title>Document</title>
+	</head>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.con {
+  max-width: 1170px;
+  margin: auto;
+}
+  body {
+  background-image: linear-gradient(to right, #587180, #a2bcc1);
+  font-family: "Poppins", sans-serif;
+  }
+    * {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ‘Open Sans’, sans-serif; */
+}
+
+.header .con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .con .logo {
+  margin-bottom: 10px;
+}
+
+.wrapper .s {
+  background: #1c3a4d;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  font-family: "Poppins", sans-serif;
+  z-index: 1111111;
+}
+.wrapper .s .profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .s .profile img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .s .profile h3 {
+  color: #ffff;
+  margin: 10px 0 5px;
+}
+
+.wrapper .s .profile p {
+  color: rgb(206, 204, 253);
+  font-size: 14px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper .s ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #ddd;
+  color: #ddd;
+  font-size: 20px;
+  position: relative;
+}
+
+.wrapper .s ul li a .icon {
+  color: #ddd;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .s ul li a:hover {
+  color: #1c3a4d;
+  background: rgb(241, 237, 237);
+  border-left: 4px solid #1c3a4d;
+}
+
+.wrapper .s ul li a:hover .icon {
+  color: #1c3a4d;
+}
+
+.wrapper .section {
+  width: calc(100% - 225px);
+  margin-left: 255px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+
+.wrapper .section .top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.btn {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.btn a:hover {
+  color: red;
+}
+
+.wrapper .section .settings a {
+  font-size: 40px;
+  color: #1c3a4d;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .section .settings a i {
+  transition: 0.3s ease;
+}
+
+.section .settings a i:hover {
+  transform: rotate(-130deg);
+}
+
+.wrapper .section .settings a:hover {
+  color: #ddd;
+}
+
+body.active .wrapper .s {
+  right: -255px;
+}
+body.active .wrapper .section {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: #bfbfbf;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(28, 58, 77, 0.9);
+  border-radius: 500px;
+}
+
+::selection {
+  background-color: #bfbfbf;
+  color: #1c3a4d;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="con">
+          <img  class ="logo" src="Screenshot_2023-05-05_061336-removebg-preview.png" alt=""  width="200px" style="margin-left: 0;">
+        <div class="wrapper" id="w">
+          <div class="s" id="s">
+            <div class="btn">
+                  <a href="#" onclick="closeNav()"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+          <div class="profile">
+              <img src="pexels-just-a-couple-photos-3777622.jpg" width="100px" >
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+              <h3>Cat Caaat</h3>
+              <p>Software Engineer</p>
+           </div>
+           <ul>
+              <li><a href="home.html" >
+                  <span class="icon"><i class="fas fa-home"></i></span>
+                  <span class="item">Home</span>
+              </a></li>
+              <li><a href="FAQs.html">
+                  <span class="icon"><i class="fa-sharp fa-solid fa-circle-info"></i></span>
+                  <span class="item">Help</span>
+              </a></li>
+              <li><a href="about_us.html">
+                  <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                  <span class="item">About Us</span>
+              </a></li>
+              <li><a href="contact_us.html">
+                  <span class="icon"><i class="fa-solid fa-headset"></i></span>
+                  <span class="item">Contact US</span>
+              </a></li>
+              <li><a href="index.html">
+                  <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                  <span class="item">Log out</span>
+              </a></li>
+              </ul>
+          </div>
+          <div class="section">
+            <div class="top">
+          <div class="settings">
+          <a href="#"><i class="fa-solid fa-gear" onclick="openNav()" id="set"></i></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      <script>
+          function openNav() {
+      document.getElementById("s").style.width = "250px";
+    }
+      function closeNav() {
+      document.getElementById("s").style.width = "0";
+    }
+      </script>
+</body>
+</html>
+	
+	<body> 
+		<div class="map">
+			<div class="continer">
+			  <iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218360.4310259035!2d29.79007511021477!3d31.224005771653328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1683290638704!5m2!1sen!2seg"
+				width="1535"
+				height="600"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			  ></iframe>
+			</div>
+		  </div>
+
+
+			
+				
+						<style>
+							
+							#mapid {
+								height : 500px;
+							}
+						</style>
+					</head>
+					<body>
+						<div id="mapid"></div>
+						<script>
+							var mymap = L.map("mapid").setView([51.505, -0.09], 13);
+							L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+								maxZoom: 19,
+							}).addTo(mymap);
+			</script>
+			<div class="inputs">
+				<input
+					type="text"
+					placeholder="where from" 
+				/>
+				<input
+					type="text"
+					placeholder="where to"
+				/>
+				<div class="row">
+					<button onclick="window.location.href='driver.html';">
+						<i class="fa-solid fa-clock"></i> leave now
+					</button>
+					<div class="item">
+						<i class="fa-solid fa-clock"></i>
+						<p onclick="window.location.href='driver.html';">arrive</p>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="item">
+						<i class="fa-solid fa-clock"></i>
+						<p onclick="window.location.href='driver.html';">leave</p>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+				</div>
+				<button onclick="window.location.href='driver.html';">Lets roll</button>
+			</div>
+		</div>
+	</body>
+	
+</html>

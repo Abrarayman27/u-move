@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(to right, #587180, #a2bcc1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-color: lightgrey;
+	border-radius: 3rem;
+	width: 75%;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.container .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .top .left {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.container .top .left .name_rating {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+.container .top .left .name_rating .rating {
+	display: flex;
+	gap: 0.5rem;
+}
+.container .top .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container .top .right i {
+	transform: translateX(-5rem) scale(4);
+}
+.container .bottom {
+	margin: auto;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+.container .bottom .item {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	border-bottom: 1px 2.04px solid blue;
+}
+.container .bottom .item i {
+	background-color: blue;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+.container .bottom .bottom_btns {
+	display: flex;
+	justify-content: space-between;
+}
+.container .bottom .bottom_btns button {
+	color: white;
+	background-color: #023047;
+
+	border-radius: 3rem;
+	background-color: ;
+	border: none;
+	padding: 0.5rem 1rem;
+} /*# sourceMappingURL=driver.css.map */
+
+	</style>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="driver.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/76a4b7876b.js"
+			crossorigin="anonymous"
+		></script>
+		<title>project</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="top">
+				<div class="left">
+					<div class="name_rating">
+						<h2>mohamed ahmed</h2>
+						<div class="rating">
+							<p>4.5</p>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<p>blue / mercedies</p>
+
+					<p>18 seats</p>
+					<p>sat, 17 Sept 2022</p>
+				</div>
+				<div class="right">
+					<i class="fa-solid fa-user-tie"></i>
+				</div>
+			</div>
+			<div class="mid">
+				<iframe
+					title="map"
+					width="1100"
+					height="200"
+					frameborder="0"
+					src="https://www.bing.com/maps/embed?h=800&w=4000&cp=31.014690504147282~31.410598754889747&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+					scrolling="no"
+				>
+				</iframe>
+			</div>
+			<div class="bottom">
+				<div class="item">
+					<i class="fa-solid fa-location-crosshairs"></i>
+					<div class="right">
+						<p>mandara</p>
+						<p>6:32</p>
+						<hr width="350px" />
+					</div>
+				</div>
+				<div class="item">
+					<i class="fa-solid fa-location-dot"></i>
+					<div class="right">
+						<p>mandara</p>
+						<p>6:32</p>
+						<hr width="350px" />
+					</div>
+				</div>
+				<div class="item">
+					<i class="fa-solid fa-money-bill-wave"></i>
+					<div class="right">
+						<p>1000$</p>
+					</div>
+				</div>
+				<div class="bottom_btns">
+					<button onclick="window.location.href='landing.html';">cancel</button>
+					<button onclick="window.location.href='payment.html';">
+						confirm
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<?php
+	$latitude = 37.7749;
+	$longitude = -122.4194;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map Example</title>
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Map Example</h1>
+	<div id="map"></div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script>
+		function initMap() {
+			var location = {lat: <? php echo $latitude; ?>, lng: <?php echo $longitude; ?>};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 12,8
+				center: location
+			});
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+	</script>
+</body>
+</html>
